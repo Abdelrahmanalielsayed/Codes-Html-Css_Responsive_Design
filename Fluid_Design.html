@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+<h1>Haupt Adresse</h1>
+<h2>Sub titel</h2>
+
+<div class="box-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<style>
+  .box-container {
+    display: flex;         
+    flex-direction: row; /*Ordne die Gegenstände 
+                            horizontal nebeneinander an (rechts/links).*/
+    gap: 10px;            /* der abstand zwiscchen die boxen */
+  }
+
+  .box {
+    width: 100px;               /* die ssind dimension für die. boxen  */
+    height: 100px;
+    background: #ccc;      /* bk color */
+  }
+
+
+
+/* kann dies verbessern, indem ich die Breite auf flex: 1 setze.
+ Dadurch nutzen die Boxen den gesamten verfügbaren Platz im Container,
+  unabhängig von der Größe des Bildschirms.
+   Zusätzlich kann ich eine Mindestbreite von 150 Pixeln festlegen.
+  Wenn der Bildschirm schmaler wird, wechseln die Boxen automatisch in die nächste Zeile.
+   So entsteht sowohl für Tablets als auch für Smartphones ein passendes*/
+
+
+   
+.box-container {
+    display: flex;         
+    flex-direction: row; 
+    flex-wrap: wrap;                  
+    gap: 10px;            
+  }
+                /*wenn width mit flex:1; umgetauscht wird
+                 ,And you can see that the boxes are essentially
+                using up all that space no matter what their viewport is, */
+
+                /*kann das auch min-width:150px; */
+  .box {
+    flex: 1;  
+    min-width: 150px;
+    width: 200px;             
+    height: 200px;
+    background: #ccc;      
+  }
+
+
+
+
+
+
+
+
+
+

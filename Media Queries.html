@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+<h1>Haupt Adresse</h1>
+<h2>Sub titel</h2>
+
+<div class="box-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+<div class="box">Box 4</div>
+
+</div>
+
+<style>
+  .box-container {
+    display: flex;         
+    flex-direction: row; /*Ordne die Gegenstände 
+                            horizontal nebeneinander an (rechts/links).*/
+    gap: 10px;            /* der abstand zwiscchen die boxen */
+  }
+
+  .box {
+    width: 100px;               /* die ssind dimension für die. boxen  */
+    height: 100px;
+    background: #ccc;      /* bk color */
+  }
+
+
+                                    /*medienabfrage*/
+
+
+
+      /* bsp: 768px bereit von tablet sizes ,  480 for mobile */
+
+          /* durch ändere die Flex-Richtung von `row` zu `column`
+          
+          farben änderung damit die unterschied erkennen kann 
+*/
+
+/*
+
+   @media screen and (max-width: 480px) {    
+     
+  .box-container {      
+        flex-direction: column; }    
+
+  .box{ 
+    background: #333;   
+
+  } 
+}
+  */
+  
+  
+
+
+
+
+
+    
+                                                /*max width und min width */
+
+/*  max-width bedeutet: Die Regeln gelten nur, wenn das Fenster kleiner als dieser Wert ist.
+min-width bedeutet: Die Regeln gelten nur, wenn das Fenster größer als dieser Wert ist.
+
+ ein beispiel:
+max-width: 480px → für Handy
+max-width: 768px → für Tablet und kleiner
+
+
+Wenn das Fenster sehr klein wird, können beide Media Queries gleichzeitig gelten.
+Mit min-width und max-width zusammen kann man einen Bereich festlegen:*/
+
+  
+/*
+
+@media screen and (max-width: 768px) {  
+    
+  .box-container {
+    flex-direction: column; }    
+
+  .box{ 
+    background: #000;          
+    width:100%
+  } 
+      } 
+  */
+
+ 
+
+  
+      
+
+      /* können wir auch beide falls machen in eine zeile 
+                                */
+  /*
+
+ @media screen and (min-width: 768px) and (min-width: 480px) {    
+     
+  .box-container {      
+        flex-direction: column; }    
+
+  .box{ 
+    background: #333;   
+
+  } 
+}
+  */
+  
+  
+
+
+
+
+
+
+
+
+
+
+
