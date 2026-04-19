@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
+<div class="hero "div>
+    <h1>Haupt Adresse</h1>
+<h2>Sub titel</h2>
+
+
+<div class="box-container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+<style>
+  .box-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+/*Wenn es nun die Ansichtsgröße ändert wird ,
+ werden die Kästchen automatisch minimiert,
+  sobald sie kleiner als 100 Pixel sind.
+   es könnte mit diesem Wert experimentieren. einfach erhöhe ihn auf minmnax 150  Pixel.
+ Das sieht schon etwas besser aus und eignet sich für Tablets,
+  Smartphones soo.*/
+
+
+  .box {
+    height: 100px;
+    background: #ccc;
+  }
+</style>
