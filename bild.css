@@ -1,0 +1,15 @@
+
+
+
+
+.bild-box img{
+
+
+    width: 100%;      /*das Bild füllt den verfügbaren Platz aus mit. 100>>
+    
+                                             Das Bild sollte auf dem Desktop nicht mehr als (600px) vergrößert werden
+                                              und die Höhe ändert sich automatisch, damit das Bild nicht verzerrt wir!   */
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
